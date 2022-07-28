@@ -7,16 +7,10 @@ bool is_fanarray(int array[], int n) {
     fan_arr = false;
   }
 
-  for (int i = 0; i < n / 2; i++) {
-    for (int j = n / 2; j > -1; j--) {
-      if (array[i] != array[j]) {
-        fan_arr = false;
-        break;
-      }
-      else{
+  for (int i = 0; i < (n + 1) / 2; i++) {
+      if (array[i] == array[n-i-1]) {
         fan_arr = true;
       }
-    }
   }
   return fan_arr;
 }

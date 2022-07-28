@@ -21,5 +21,5 @@ void two_five_nine(int array[], int n){
                 break;
         }
     }
-    cout << "2:" << two_count << ";5:" << five_count << ";9:" << nine_count << endl;
+    cout << "2:" << two_count << ";5:" << five_count << ";9:" << nine_count << ";" << endl;
 }

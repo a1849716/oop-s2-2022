@@ -17,6 +17,6 @@ int median_array(int array[], int n) {
       }
     }
   }
-  median = (n+1)/2;
+  median = array[(n)/2];
   return median;
 }

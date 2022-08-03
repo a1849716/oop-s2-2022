@@ -28,7 +28,7 @@ void print_binary_str(string decimal_number) {
   }
 
   for (int i = count - 1; i >= 0; i--) {
-    cout << binary[i] << " ";
+    cout << binary[i];
   }
   cout << endl;
 }

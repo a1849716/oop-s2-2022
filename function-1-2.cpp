@@ -20,5 +20,4 @@ void print_class(std::string courses[4], std::string students[5],int report_card
     }
     cout << endl;
   }
-  cout << endl;
 }

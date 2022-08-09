@@ -8,7 +8,7 @@ void printer(int array[10][10]) {
       if (c != 9) {
         cout << " ";
       }
-      cout << endl;
     }
+    cout << endl;
   }
 }

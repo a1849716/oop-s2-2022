@@ -2,9 +2,8 @@
 #include <string>
 using namespace std;
 
-void print_class(std::string courses[4], std::string students[5],
-                 int report_card[5][4], int nstudents) {
-  cout << "Report card ";
+void print_class(std::string courses[4], std::string students[5],int report_card[5][4], int nstudents) {
+  cout << "Report Card ";
   for (int i = 0; i < 5; i++) {
     cout << courses[i] << " ";
   }

@@ -4,7 +4,7 @@ using namespace std;
 
 void print_class(std::string courses[4], std::string students[5],int report_card[5][4], int nstudents) {
   cout << "Report Card ";
-  for (int i = 0; i < 5; i++) {
+  for (int i = 0; i < 4; i++) {
     cout << courses[i] << " ";
   }
   cout << endl;

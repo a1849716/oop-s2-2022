@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 
-extern void string_2d_copy(std::string first[3][2], std::string second[3][2], int n);
+extern void string_2d_copy(std::string first[][2], std::string second[][2], int n);
 
 int main(){
   string arr1[3][2] = {{"lmao", "lmao"},{"lmao", "lmao"},{"lmao", "lmao"}};

@@ -14,6 +14,8 @@ int max_sub_sum(int *nums, int length) {
   if (length < 1){
     return 0;
   }
-
+  else if(curr_max < 1){
+    return 0;
+  }
   return curr_max;
 }

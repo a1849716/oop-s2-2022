@@ -11,8 +11,8 @@ int *readNumbers() {
 
 void hexDigits(int *numbers, int length) {
   for (int i = 0; i < length; i++) {
-    cout << i << " " << (*numbers + i) << " ";
-    switch (*numbers + i) {
+    cout << i << " " << *(numbers + i) << " ";
+    switch (numbers[i]) {
       case 0:
         cout << 0;
         break;

@@ -4,7 +4,6 @@ using namespace std;
 int* matrix_min_max(int** vals, int num_rows, int num_cols) {
   int min = vals[0][0];
   int max = vals[0][0];
-
   for (int r = 0; r < num_rows; r++) {
     for (int c = 0; c < num_cols; c++) {
       if (vals[r][c] <= min) {
@@ -14,7 +13,7 @@ int* matrix_min_max(int** vals, int num_rows, int num_cols) {
         max = vals[r][c];
       }
     }
-  }  
+  } 
   int min_max[2] = {min, max};
-  return min_max;
+  cout <<"min: "<< min_max[0]<<" max: " << min_max[1];
 }

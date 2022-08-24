@@ -41,8 +41,9 @@ string month_lookup(int month) {
     case 12:
       strMon = "Dec";
       break;
-    defult:
-      strMon = "invalid month";
   }
+    if (month < 1 || month > 12){
+      strMon = "invalid month";
+    }
   return strMon;
 }

@@ -13,4 +13,5 @@ void print_ascending(int *vals, int len){
     }
     curr_num = *(vals + i);
   }
+  cout << endl;
 }

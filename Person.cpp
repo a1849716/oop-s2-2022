@@ -2,9 +2,9 @@
 #include <string>
 using namespace std;
 // constructor
-Person::Person() {
-  Name = " ";
-  Salary = 0;
+Person::Person(int mySalary, string myName) {
+Name = myName;
+Salary = mySalary;
 }
 
 void Person::setName(string name) { Name = name; }

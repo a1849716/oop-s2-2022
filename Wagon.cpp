@@ -1,7 +1,9 @@
 #include "Wagon.h"
-#include "Capybara.h"
+
 #include <iostream>
 #include <string>
+
+#include "Capybara.h"
 using namespace std;
 
 // constructor
@@ -12,8 +14,9 @@ Wagon::Wagon() {
 }
 
 bool Wagon::addCapybara(Capybara newCapy) {
-  if (count > 4) {
-    cout << "THE WAGON IS FULL!!! CONSIDER UPGRADING NOW FOR 599"<<endl;
+  if (count >= 4) {
+    cout << "oops cannot add capybara: " << newCapy.getName() << " of age "
+         << newCapy.getAge() << endl;
     return false;
   } else {
     capyArr[count] = newCapy;
@@ -31,7 +34,6 @@ void Wagon::emptyWagon() {
 // for each capybara in the order they were added
 void Wagon::printCapybaras() {
   for (int i = 0; i < 4; i++) {
-    cout << capyArr[i].getName() << " "
-         << capyArr[i].getAge() << endl;
+    cout << capyArr[i].getName() << " " << capyArr[i].getAge() << endl;
   }
 };

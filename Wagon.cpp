@@ -8,17 +8,18 @@ using namespace std;
 Wagon::Wagon() {
   count = 0;
   empty = true;
-  capyArr[4];
+  capyArr[3] = Capybara();
 }
 
 bool Wagon::addCapybara(Capybara newCapy) {
-  if (count >= 3) {
-    empty = false;
+  if (count > 4) {
+    cout << "THE WAGON IS FULL!!! CONSIDER UPGRADING NOW FOR 599"<<endl;
+    return false;
   } else {
     capyArr[count] = newCapy;
   }
   count++;
-  return empty;
+  return true;
 }
 // remove all Capybaras from the wagon
 void Wagon::emptyWagon() {

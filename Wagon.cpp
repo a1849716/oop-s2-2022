@@ -1,15 +1,14 @@
 #include "Wagon.h"
-
+#include "Capybara.h"
 #include <iostream>
 #include <string>
-
-#include "Capybara.h"
 using namespace std;
 
 // constructor
 Wagon::Wagon() {
   count = 0;
   empty = true;
+  capyArr[4];
 }
 
 bool Wagon::addCapybara(Capybara newCapy) {

@@ -4,7 +4,7 @@
 #include "Capybara.h"
 using namespace std;
 
-class Wagon {
+class Wagon : public Capybara{
  private:
   bool empty;
   int count;

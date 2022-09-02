@@ -7,8 +7,8 @@ class Person {
  private:
   string Name;
   int Salary;
-
  public:
+  Person();
   Person(int mySalary, string myName);
   void setName(string name);
   void setSalary(int age);

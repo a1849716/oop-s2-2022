@@ -6,6 +6,10 @@ Person::Person(int mySalary, string myName) {
 Name = myName;
 Salary = mySalary;
 }
+Person::Person(){
+  Salary = 0;
+  Name = "";
+}
 
 void Person::setName(string name) { Name = name; }
 string Person::getName() { return Name; }

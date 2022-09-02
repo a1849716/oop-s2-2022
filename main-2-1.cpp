@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-
 #include "Capybara.h"
 #include "Wagon.h"
 using namespace std;

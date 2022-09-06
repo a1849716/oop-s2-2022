@@ -41,9 +41,9 @@ bool Orchestra::add_musician(Musician new_musician) {
     ptr_array[count] = new_musician;
     count++;
     return true;
-  } else {
-    return false;
   }
+  
+  return false;
 }
 
 Orchestra::~Orchestra(){}

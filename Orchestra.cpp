@@ -13,20 +13,15 @@ Orchestra::Orchestra() {
 Orchestra::Orchestra(int size) {
   ptr_array = new Musician[size];
   max_size = size;
+  count = 0;
 }
 
 int Orchestra::get_current_number_of_members() {
-  int curr_players = 0;
-  for (int i = 0; i < count; i++) {
-    if (ptr_array[i].get_instrument() == " ") {
-      count++;
-    }
-  }
-  return curr_players;
+  return count;
 }
 
 bool Orchestra::has_instrument(string inp_instrument) {
-  for (int i = 0; i <= count; i++) {
+  for (int i = 0; i < max_size; i++) {
     if (ptr_array[i].get_instrument() == inp_instrument) {
       return 1;
     }

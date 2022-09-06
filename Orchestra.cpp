@@ -28,10 +28,10 @@ int Orchestra::get_current_number_of_members() {
 bool Orchestra::has_instrument(string inp_instrument) {
   for (int i = 0; i <= count; i++) {
     if (ptr_array[i].get_instrument() == inp_instrument) {
-      return true;
+      return 1;
     }
   }
-  return false;
+  return 0;
 }
 
 Musician *Orchestra::get_members() { return ptr_array; }
@@ -40,10 +40,10 @@ bool Orchestra::add_musician(Musician new_musician) {
   if (count < max_size) {
     ptr_array[count] = new_musician;
     count++;
-    return true;
+    return 1;
   }
   
-  return false;
+  return 0;
 }
 
 Orchestra::~Orchestra(){}

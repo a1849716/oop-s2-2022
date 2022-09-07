@@ -3,7 +3,7 @@
 using namespace std;
 
 Cage::Cage(){
-  Name = " ";
+  Name = "";
   ID = 0;
 };
 

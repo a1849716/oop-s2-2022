@@ -5,7 +5,7 @@ using namespace std;
 
 Clinic::Clinic(){
   ptrCage = new Cage;
-  clinicName = "null";
+  clinicName = "";
   count = 0;
 }
 
@@ -25,6 +25,7 @@ Cage* Clinic::get_cages() { return ptrCage;}
 bool Clinic::add_cage(Cage new_cage){
   if (count < max){
     ptrCage[count] = new_cage;
+    count++;
     return true;
   }
   return false;

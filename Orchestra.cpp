@@ -17,7 +17,7 @@ Orchestra::Orchestra(int size) {
 }
 
 int Orchestra::get_current_number_of_members() {
-  return count;
+  return count+1;
 }
 
 bool Orchestra::has_instrument(string inp_instrument) {

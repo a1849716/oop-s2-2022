@@ -28,4 +28,23 @@ int main(){
   else{
     cout << "Test 3 Failed" << endl;
   }
+
+  if (add(-10, -25) == -35) {
+    std::cout << "Test passed!" << std::endl;
+  }
+  else{
+    cout << "Test 4 Failed" << endl;
+  }
+  if (add(0, -2) == -2) {
+    std::cout << "Test passed!" << std::endl;
+  }
+  else{
+    cout << "Test 5 Failed" << endl;
+  }
+  if (add(50, 62) == 112) {
+    std::cout << "Test passed!" << std::endl;
+  }
+  else{
+    cout << "Test 6 Failed" << endl;
+  }
 }

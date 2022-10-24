@@ -11,6 +11,7 @@ hunter::hunter(string n, int v){
   kills = 0;
   nextID++;
 };
+int hunter::nextID = 1000;
 
 int hunter::get_kills(){return kills;};
 

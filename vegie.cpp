@@ -9,8 +9,9 @@ vegie::vegie(string n, int v){
   name = n;
   volume = v;
   favourite_food = "grass";
-  nextID = 100;
+  nextID++;
 };
+  int vegie::nextID = 100;
 
   string vegie::get_favourite_food(){return favourite_food;};
 

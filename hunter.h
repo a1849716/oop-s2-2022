@@ -5,6 +5,7 @@
 class hunter : public animal {
  private:
   static int nextID;
+  int nextID = 1000;
   int kills;
  public:
   hunter(string n, int v);

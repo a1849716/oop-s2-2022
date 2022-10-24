@@ -9,7 +9,7 @@ hunter::hunter(string n, int v){
   name = n;
   volume = v;
   kills = 0;
-  nextID = 1000;
+  nextID++;
 };
 
 int hunter::get_kills(){return kills;};

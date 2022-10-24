@@ -4,12 +4,12 @@
 
 class vegie : public animal {
  private:
-  string favorite_food;
+  string favourite_food;
   static int nextID;
  public:
   vegie(string n, int v);
-  string get_favorite_food();
-  void set_favorite_food(string new_fav_food);
+  string get_favourite_food();
+  void set_favourite_food(string new_fav_food);
   string get_name();
 };
 #endif

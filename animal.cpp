@@ -5,7 +5,7 @@
 using namespace std;
 
 animal::animal(){
-  name = "";
+  name = " ";
   volume = 0;
 }
 animal::animal(string n, int v) {

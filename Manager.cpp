@@ -23,7 +23,7 @@ void Manager::work(int mins) {
       energyLevel -= mins * 0.25;
     }
   }
-  if (mins > 480) {
+  if (hoursWorked > 8) {
     daysWorked++;
     hoursWorked = 0;
   }

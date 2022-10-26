@@ -25,4 +25,4 @@ void Employee::set_energyLevel(float newEnergyLevel) {
 
 void work(int mins){};
 
-float pay(){};
+float pay(){return 0.0;};

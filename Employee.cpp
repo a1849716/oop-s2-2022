@@ -5,7 +5,10 @@ Employee::Employee() {
   energyLevel = 0.0;
 };
 
-Employee::Employee(int hourlyRate) { hourlyRate = payRate; };
+Employee::Employee(int hourlyRate) { 
+  energyLevel = 100.0;
+  payRate = hourlyRate;
+  };
 
 void Employee::takeABreak(int mins) {
   if (payRate < 98) {

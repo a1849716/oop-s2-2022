@@ -48,7 +48,7 @@ void Casual::work(int mins){
 };
 
 float Casual::pay(){
-  int totalHours = 0;
+  float totalHours = 0;
   for (int i = 0; i < 7; i++) {
     totalHours += hoursWorked[i];
     hoursWorked[i] = 0;

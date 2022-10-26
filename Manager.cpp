@@ -20,16 +20,17 @@ void Manager::work(int mins) {
     if (energyLevel > 0) {
       energyLevel -= mins * 0.25;
     }
-  } else if (mins > 480) {
+  }
+  if (mins > 480) {
     daysWorked++;
     hoursWorked = 0;
   }
-  hoursWorked += mins/60;
+  hoursWorked += mins / 60;
 };
 
 int Manager::get_daysWorked() { return daysWorked; };
 
-float Manager::get_hoursWorked(){return hoursWorked;};
+float Manager::get_hoursWorked() { return hoursWorked; };
 
 float Manager::pay() {
   float payed = daysWorked * (payRate * 8);

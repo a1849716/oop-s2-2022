@@ -14,5 +14,7 @@ class Casual : public Employee {
   void endWorkDay();  
   int get_dayCount();
   void set_dayCount(int day);
+  void work(int mins);
+  float pay();
 };
 #endif

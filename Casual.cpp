@@ -40,11 +40,10 @@ void Casual::work(int mins){
   }
 };
 
-void Casual::pay(){
+float Casual::pay(){
   int totalHours = 0;
-  int payedAmount = 0;
   for (int i = 0; i < 7; i++) {
     totalHours += hoursWorked[i];
   }
-  payedAmount = totalHours * payRate;
+  return totalHours * payRate;
 }

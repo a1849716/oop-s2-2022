@@ -4,10 +4,13 @@
 
 class Shop : public Employee{
   private:
-  Employee ** Employee;
+  Employee ** Employees;
   int count;
-  public:
   Shop();
-  
+  public:
+  static Shop* createShop(int authority);
+  void addEmployee(Employee* newEmployee);
+  Employee** get_employees();
+  int get_count();
 };
 #endif

@@ -20,10 +20,10 @@ int Employee::get_payRate() { return payRate; };
 
 float Employee::get_energyLevel() { return energyLevel; };
 
-void Employee::set_payRate(int hourlyRate) { hourlyRate = payRate; };
+void Employee::set_payRate(int hourlyRate) { payRate = hourlyRate; };
 
 void Employee::set_energyLevel(float newEnergyLevel) {
-  newEnergyLevel = energyLevel;
+  energyLevel = newEnergyLevel;
 };
 
 void Employee::work(int mins) { int payed = mins * payRate; };

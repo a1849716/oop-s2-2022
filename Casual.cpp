@@ -32,6 +32,9 @@ void Casual::work(int mins){
   if (energyLevel > 0){
     energyLevel -= mins * 0.5;
   }
+  if (mins > 200){
+    energyLevel = 0.0;
+  }
   if (dayCount < 4){
     hoursWorked[dayCount] = mins/30;
     }

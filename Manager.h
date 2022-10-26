@@ -12,5 +12,7 @@ class Manager : public Employee {
   Manager(int hourlyRate);
   void work(int mins);
   float pay();
+  int get_daysWorked();
+  float get_hoursWorked();
 };
 #endif

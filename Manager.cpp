@@ -26,8 +26,8 @@ void Manager::work(int mins) {
   if (hoursWorked > 8) {
     daysWorked++;
     hoursWorked = 0;
+    energyLevel = 100.0;
   }
-  hoursWorked += mins / 60;
 };
 
 int Manager::get_daysWorked() { return daysWorked; };

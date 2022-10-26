@@ -41,7 +41,7 @@ void Casual::work(int mins){
   else{
     hoursWorked[dayCount] = mins/60;
   }
-  hoursWorked += min/60
+  hoursWorked[dayCount] += mins/60;
 };
 
 float Casual::pay(){

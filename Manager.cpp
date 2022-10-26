@@ -6,12 +6,14 @@ Manager::Manager() {
   payRate = 0;
   hoursWorked = 0;
   daysWorked = 0;
+  energyLevel = 100.0;
 };
 
 Manager::Manager(int hourlyRate) {
   payRate = hourlyRate;
   hoursWorked = 0;
   daysWorked = 0;
+  energyLevel = 100.0;
 };
 
 void Manager::work(int mins) {

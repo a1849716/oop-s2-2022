@@ -24,6 +24,7 @@ void Manager::work(int mins) {
     daysWorked++;
     hoursWorked = 0;
   }
+  hoursWorked += mins/60;
 };
 
 int Manager::get_daysWorked() { return daysWorked; };

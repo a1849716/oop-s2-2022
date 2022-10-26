@@ -2,5 +2,5 @@
 #include "Casual.h"
 
 int main(){
-  Casual worker1;
+  Casual casual(20);
 }

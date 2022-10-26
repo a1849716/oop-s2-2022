@@ -26,6 +26,6 @@ void Employee::set_energyLevel(float newEnergyLevel) {
   newEnergyLevel = energyLevel;
 };
 
-void work(int mins){};
+void Employee::work(int mins){int payed = mins * payRate;};
 
-float pay(){return 0.0;};
+float Employee::pay(){return 0.0;};

@@ -48,6 +48,7 @@ float Casual::pay(){
   int totalHours = 0;
   for (int i = 0; i < 7; i++) {
     totalHours += hoursWorked[i];
+    hoursWorked[i] = 0;
   }
   return totalHours * payRate;
 }

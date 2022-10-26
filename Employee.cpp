@@ -11,9 +11,10 @@ Employee::Employee(int hourlyRate) {
 };
 
 void Employee::takeABreak(int mins) {
-  if (energyLevel + (2 * mins) < 98) {
-    energyLevel += 2 * mins;
-  };
+  energyLevel += 2 * mins;
+  if (energyLevel > 100) {
+    energyLevel = 100;
+  }
 };
 
 int Employee::get_payRate() { return payRate; };
